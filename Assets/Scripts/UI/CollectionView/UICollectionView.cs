@@ -22,7 +22,7 @@ public class UICollectionView : MonoBehaviour {
     private iCollectionViewCell m_cell;
 
     [SerializeField]
-    private iCollectionViewLayout m_layout;
+    private CollectionViewLayout m_layout;
 
     [SerializeField]
     private bool m_tapSelectEnabled = true;
@@ -47,7 +47,7 @@ public class UICollectionView : MonoBehaviour {
     private Vector2 m_totalDrag = Vector2.zero;
     private bool Dirty { get; set; }
 
-	private iCollectionViewLayout m_prevLayout;
+	private CollectionViewLayout m_prevLayout;
 
     private List<object> m_data;
     public List<object> Data
@@ -78,8 +78,8 @@ public class UICollectionView : MonoBehaviour {
             m_layout.RegisterCell(m_cell, OnCellClickEvent);
 
         //Register with any other components
-		iCollectionViewLayout[] layouts = GetComponents<iCollectionViewLayout>();
-		foreach(iCollectionViewLayout layout in layouts)
+		CollectionViewLayout[] layouts = GetComponents<CollectionViewLayout>();
+		foreach(CollectionViewLayout layout in layouts)
         {
             if(m_layout!=layout)
                 layout.RegisterCell(m_cell, OnCellClickEvent);
@@ -122,7 +122,7 @@ public class UICollectionView : MonoBehaviour {
         Dirty = true;
     }
 
-	public void SetLayout(iCollectionViewLayout layout)
+	public void SetLayout(CollectionViewLayout layout)
     {
         layout.RegisterCell(m_cell, OnCellClickEvent);
         layout.CurrentIndex = m_layout.CurrentIndex;
