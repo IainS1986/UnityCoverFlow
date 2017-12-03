@@ -20,3 +20,20 @@ Cell reuse is supported using a simple Cell Pool with UICollectionCells register
 Data "binding" can be expanded upon with the cell reuse.
 
 All layouts have various settings to tweak positions, speeds, snapping, wrapping and the like. These can also be updated at runtime in the editor to see results in real time.
+
+
+# Demos
+
+Here's a few GIFs showing the layouts in action in the editor (GIFs are only at 30fps and appear to have bad artifacts in them, running in the editor is obviously at full FPS with no rendering issues).
+
+* Cover Flow Layout
+![Cover Flow](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/CoverFlow.gif)
+
+* Carousel Layout
+![Carousel Flow](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/CarouselFlow.gif)
+
+* Messy Paper Layout
+![Messy Paper Flow](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/MessyPaper.gif)
+
+* Layouts can have multiple configurable elements, here's an example of the Cover Flow properties being edited at runtime...
+![Editable Properties](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/CoverFlowEditor.gif)
