@@ -33,7 +33,7 @@ Here's a few GIFs showing the layouts in action in the editor (GIFs are only at 
 ![Carousel Flow](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/CarouselFlow.gif)
 
 * Messy Paper Layout
-![Messy Paper Flow](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/MessyPaper.gif)
+![Messy Paper Flow](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/MessyPaperFlow.gif)
 
 * Layouts can have multiple configurable elements, here's an example of the Cover Flow properties being edited at runtime...
 ![Editable Properties](https://github.com/IainS1986/UnityCoverFlow/blob/master/GIFs/CoverFlowEditor.gif)
