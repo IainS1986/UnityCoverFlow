@@ -58,6 +58,19 @@ public abstract class CollectionViewLayout : MonoBehaviour
         //GO through cells, any with an index we no longer need, turn off
         int minVal = (min < 0) ? min + data.Count : min;
         int maxVal = (max >= data.Count) ? max - data.Count : max;
+        
+        
+        if (!IndexWrap) {
+            if (max >= data.Count) {
+                maxVal = data.Count - 1;
+                minVal = maxVal - m_maxCells;
+            }
+
+            min = minVal;
+            max = maxVal;
+        }
+
+        
         for(int i=0; i<cells.Count; i++)
         {
             iCollectionViewCell c = cells[i];
